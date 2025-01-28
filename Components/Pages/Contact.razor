@@ -1,0 +1,23 @@
+@page "/contact"
+
+
+<PageTitle>Contact</PageTitle>
+
+<h1>Contact</h1>
+
+
+<EditForm Model="@contact">
+    @* <InputText id="FullName" @bind-Value="@contact.FullName"></InputText>
+    <InputText type="email" id="EmailAddress" @bind-Value="@contact.EmailAddress"></InputText>
+    <InputText id="Subject" @bind-Value="@contact.Subject"></InputText>
+    <InputTextArea id="Message" @bind-Value="@contact.Message"></InputTextArea> *@
+    <FormInput Id="FullName" Label="Full Name" Type="text" Binding="@contact.FullName"></FormInput>
+    <FormInput Id="EmailAddress" Label="Email" Type="email" Binding="@contact.EmailAddress"></FormInput>
+    <FormInput Id="Subject" Label="Subject" Type="text" Binding="@contact.Subject"></FormInput>
+    <FormInput Id="Message" Label="Message" Type="textarea" Binding="@contact.Message"></FormInput>
+    <button type="submit">Submit</button>
+</EditForm>
+
+@code{
+    BlazorWebsite.Components.Models.Contact contact = new();
+}

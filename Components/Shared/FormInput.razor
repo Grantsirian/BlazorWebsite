@@ -1,0 +1,18 @@
+<div class="input-wrapper">
+    <label for="@Id">@Label</label>
+    @if (Type == "textarea")
+    {
+        <InputTextArea id="@Id" name="@Label" @bind-Value="@Binding"></InputTextArea>
+    }
+    else
+    {
+        <InputText id="@Id" name="@Label" type="@Type" @bind-Value="@Binding"></InputText>
+    }
+</div>
+
+@code {
+    [Parameter] public string Id { get; set; }
+    [Parameter] public string Label { get; set; }
+    [Parameter] public string Type { get; set; }
+    [Parameter] public string Binding { get; set; }
+}

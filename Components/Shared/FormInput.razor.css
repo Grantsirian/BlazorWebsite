@@ -1,0 +1,18 @@
+::deep{
+    --something: red
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 16rem;
+}
+
+::deep :is(input, textarea) {
+    width: 100%;
+    color: var(--something);
+}
+
+.input-wrapper label {
+    margin-top: 1rem;
+}

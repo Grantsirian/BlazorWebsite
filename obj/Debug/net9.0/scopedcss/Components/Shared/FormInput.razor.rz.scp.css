@@ -1,0 +1,18 @@
+[b-o5msyrv6mf]{
+    --something: red
+}
+
+.input-wrapper[b-o5msyrv6mf] {
+    display: flex;
+    flex-wrap: wrap;
+    width: 16rem;
+}
+
+[b-o5msyrv6mf] :is(input, textarea) {
+    width: 100%;
+    color: var(--something);
+}
+
+.input-wrapper label[b-o5msyrv6mf] {
+    margin-top: 1rem;
+}

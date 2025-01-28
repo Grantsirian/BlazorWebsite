@@ -1,30 +1,44 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">BlazorWebsite</a>
-    </div>
+﻿<div class="ps-3 navbar navbar-dark logo-wrapper">
+    <a class="navbar-brand" href="">BlazorWebsite</a>
 </div>
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
+    <nav class="nav-wrapper px-3">
+        @foreach (var item in navItems)
+        {
+            <div class="nav-item">
+                @if (item == navItems.First())
+                {
+                    <NavLink class="nav-link" href="@item.LinkDestination" Match="NavLinkMatch.All">
+                        <span class="@item.LinkIcon" aria-hidden="true"></span> @item.LinkName
+                    </NavLink>
+                }
+                else
+                {
+                    <NavLink class="nav-link" href="@item.LinkDestination">
+                        <span class="@item.LinkIcon" aria-hidden="true"></span> @item.LinkName
+                    </NavLink>
+                }
+            </div>
+        }
     </nav>
 </div>
 
+@code {
+    public class NavItem
+    {
+        public string LinkName { get; set; }
+        public string LinkDestination { get; set; }
+        public string LinkIcon { get; set; }
+    }
+
+    List<NavItem> navItems = new List<NavItem>
+{
+new NavItem { LinkName = "Home", LinkDestination = "/", LinkIcon = "bi bi-house-door-fill-nav-menu" },
+new NavItem { LinkName = "About", LinkDestination = "about", LinkIcon = "bi bi-about-fill-nav-menu" },
+new NavItem { LinkName = "Contact", LinkDestination = "contact", LinkIcon = "bi bi-envelope-fill-nav-menu" },
+new NavItem { LinkName = "Weather", LinkDestination = "weather", LinkIcon = "bi bi-list-nested-nav-menu" }
+};
+}

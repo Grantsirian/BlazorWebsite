@@ -1,0 +1,28 @@
+@rendermode InteractiveServer
+
+<div class="banner-wrapper">
+
+    <div class="banner-background">
+        <h1>@Title</h1>
+        <p>
+            @Blurb
+        </p>
+
+        @if (ChildContent != null)
+        {
+            <div class="dynamic-content">
+                @ChildContent
+            </div>
+        }
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public string? Blurb { get; set; }
+    @* public string blurb = "If you like this banner give us a high five below!"; *@
+
+
+}

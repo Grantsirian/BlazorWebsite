@@ -3,19 +3,35 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<Banner Title="Home of High Fives!" Blurb="If you like this banner give us a high five below!">
+    @if (highFiveCount > 0)
+    {
+        <p role="status">Wow! you've given me @highFiveCount high five@(highFiveCount > 1 ? "s" : "")!</p>
+    }
+    <button class="btn btn-primary" @onclick="IncrementCount">High five!</button>
+</Banner>
 
-Welcome to your new app.
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+@foreach (var card in CardList)
+{
+    <Card Title="@card.Title" Description="@card.Description" ImageUrl="@card.ImageUrl" ImageAltText="@card.ImageAltText"></Card>
+}
 
 @code {
-    private int currentCount = 0;
+    private int highFiveCount = 0;
 
     private void IncrementCount()
     {
-        currentCount++;
+        highFiveCount++;
     }
+
+
+    public List<CardItem> CardList = new List<CardItem>()
+    {
+        new CardItem("/","ImageAlt","Title1","Description1"),
+        new CardItem("/","ImageAlt","Title2","Description2"),
+        new CardItem("/","ImageAlt","Title3","Description3"),
+        new CardItem("/","ImageAlt","Title4","Description4"),
+        new CardItem("/","ImageAlt","Title5","Description5")
+    };
+
 }

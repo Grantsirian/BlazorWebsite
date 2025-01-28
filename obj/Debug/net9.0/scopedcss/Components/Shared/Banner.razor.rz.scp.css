@@ -1,0 +1,17 @@
+
+.banner-wrapper[b-krbn27fcm1] {
+    height: 12rem;
+    position: relative;
+}
+
+.banner-background[b-krbn27fcm1] {
+    background: rgb(70,130,180);
+    background: linear-gradient(45deg, rgba(70,130,180,1) 0%, rgba(9,9,121,1) 33%, rgba(9,9,121,1) 66%, rgba(85,170,221,1) 100%);
+    padding: 2rem 0;
+}
+
+.banner-background[b-krbn27fcm1]  > :is(h1,p, .dynamic-content) {
+    color: #fff;
+    padding: 1rem 4rem 1rem;
+    margin: 0;
+}

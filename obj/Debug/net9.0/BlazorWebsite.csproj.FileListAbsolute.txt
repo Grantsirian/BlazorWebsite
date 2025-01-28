@@ -16,7 +16,6 @@ E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Layout\MainLayo
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\bundle\BlazorWebsite.styles.css
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\projectbundle\BlazorWebsite.bundle.scp.css
-E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\wjvmvmwgwo-khy4lop6wu.gz
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\n1guza4o1e-bqjiyaj88i.gz
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\33kapibk2m-c2jlpeoesf.gz
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\6b8ff7ntyu-erw9l3u2r3.gz
@@ -77,5 +76,9 @@ E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\BlazorWebsite.genruntimeconfig.cache
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\ref\BlazorWebsite.dll
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\BlazorWebsite.sourcelink.json
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Shared\FormInput.razor.rz.scp.css
-E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\l2w6wkdiwf-futnzy2hrv.gz
-E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\j1r3oyt1x3-futnzy2hrv.gz
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Shared\Banner.razor.rz.scp.css
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Shared\Footer.razor.rz.scp.css
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\wjvmvmwgwo-ar72r63dju.gz
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Shared\Card.razor.rz.scp.css
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\l2w6wkdiwf-r89bdg4eh0.gz
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\j1r3oyt1x3-r89bdg4eh0.gz

@@ -6,7 +6,7 @@
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="nav-wrapper px-3">
-        @foreach (var item in navItems)
+        @foreach (NavItem item in navItems)
         {
             <div class="nav-item">
                 @if (item == navItems.First())

@@ -26,7 +26,17 @@
 }
 
 .navbar-brand[b-ivd3op81bg] {
-    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+
+.header-logo[b-ivd3op81bg] {
+    filter: invert(1);
+    height: 3rem;
+    display: inline-block;
+    width: auto;
 }
 
 .bi[b-ivd3op81bg] {

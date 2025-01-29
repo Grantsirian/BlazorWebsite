@@ -1,12 +1,19 @@
-<div class="input-wrapper">
+<div class="input-wrapper form-group">
     <label for="@Id">@Label</label>
     @if (Type == "textarea")
     {
-        <InputTextArea id="@Id" name="@Label" @bind-Value="@Binding"></InputTextArea>
+        <InputTextArea id="@Id" name="@Label" @bind-Value="@Binding" class="form-control" @oninput="validateInput">
+        </InputTextArea>
     }
     else
     {
-        <InputText id="@Id" name="@Label" type="@Type" @bind-Value="@Binding"></InputText>
+        <InputText id="@Id" name="@Label" type="@Type" @bind-Value="@Binding" class="form-control" @oninput="validateInput">
+        </InputText>
+    }
+    @ChildContent
+    @if (HelperText != null)
+    {
+        <small class="form-text text-muted">@HelperText</small>
     }
 </div>
 
@@ -14,5 +21,52 @@
     [Parameter] public string Id { get; set; }
     [Parameter] public string Label { get; set; }
     [Parameter] public string Type { get; set; }
+    [Parameter] public string HelperText { get; set; }
     [Parameter] public string Binding { get; set; }
+    [Parameter] public EventCallback<string> BindingChanged { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    @* private DotNetObjectReference<FormInput>? self; *@
+    private IJSObjectReference? module;
+
+    [Inject]
+    public IJSRuntime JSRuntime { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("console.log", $"connected JS in code");
+            //self = DotNetObjectReference.Create(this);
+            module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./Components/Shared/FormInput.razor.js");
+        }
+    }
+
+    public async Task validateInput(ChangeEventArgs e)
+    {
+        string value = e.Value?.ToString() ?? "";
+        await JSRuntime.InvokeVoidAsync("console.log", $"Blazor validateInput() triggered with value: {value}");
+        //Console.WriteLine($"Blazor validateInput() triggered with value: {value}");
+
+        // Update the Binding manually
+        //Binding = value;
+
+        // Notify the parent component of the change
+        //await BindingChanged.InvokeAsync(value);
+
+        // Call the JS function
+        if (module != null)
+        {
+            await module.InvokeVoidAsync("validateEmailInput", value);
+            await JSRuntime.InvokeVoidAsync("console.log", $"called JS with: {value}");
+        }
+    }
+
+    public async void ConsoleLog(string message)
+    {
+        await JSRuntime.InvokeVoidAsync("console.log", message);
+    }
+
+    @* public void Dispose()
+    {
+        self?.Dispose();
+    } *@
 }

@@ -1,22 +1,60 @@
+:root{
+    
+/* Brand */
+--brand-colour-dark: #182635ff;
+--brand-colour-primary: #2b425dff;
+--brand-colour-secondary: #365478ff;
+--brand-colour-light: #3d5f85ff;
+--brand-colour-accent: #cbbf7fff;
+--brand-colour-white: #dae7fcff;
+
+/*Tones*/
+--brand-colour-dark-50: #182635f0;
+--brand-colour-primary-50: #2b425df0;
+--brand-colour-secondary-50: #365478f0;
+--brand-colour-light-50: #3d5f85f0;
+--brand-colour-accent-50: #cbbf7ff0;
+--brand-colour-white-50: #dae7fcf0;
+
+/* Gradients */
+--brand-gradient-0: linear-gradient(0deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-90: linear-gradient(90deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-180: linear-gradient(180deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-270: linear-gradient(270deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-45: linear-gradient(45deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-135: linear-gradient(135deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-225: linear-gradient(225deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-315: linear-gradient(315deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+--brand-gradient-radial-1: radial-gradient(var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+}
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--brand-colour-white);
 }
 
 a, .btn-link {
-    color: #006bb7;
+    color: var(--brand-colour-light);
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: var(--brand-colour-accent);
+    border-color: var(--brand-colour-accent);
+}
+
+.btn-primary:hover{
+    background-color: var(--brand-colour-light );
+    border-color: var(--brand-colour-light);
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  box-shadow: 0 0 0 0.1rem var(--brand-colour-white), 0 0 0 0.25rem var(--brand-colour-light);
+  background-color: var(--brand-colour-light );
+  border-color: var(--brand-colour-primary);
 }
 
 .content {
@@ -25,6 +63,11 @@ a, .btn-link {
 
 h1:focus {
     outline: none;
+}
+
+.large-copy{
+    display: inline-flex;
+    max-width: 72ch;
 }
 
 .valid.modified:not([type=checkbox]) {

@@ -1,19 +1,46 @@
 @page "/contact"
+@rendermode InteractiveServer
 
 
 <PageTitle>Contact</PageTitle>
 
-<h1>Contact</h1>
+<section class="contact-form-wrapper m-2 m-md-4">
+    <h1>Contact</h1>
+    <h4>@contactCopy</h4>
+    <p class="large-copy">@contactBlurb</p>
+    
+    <EditForm Model="@contact" OnValidSubmit="SendEmail" OnInvalidSubmit="InvalidSubmissionResponse" FormName="ContactForm">
+        <DataAnnotationsValidator />
+        
+        <FormInput Id="FullName" Label="Full Name" Type="text" Binding="@contact.FullName">
+            <ValidationMessage For="@(()=>contact.FullName)" />
+        </FormInput>
+        <FormInput Id="EmailAddress" Label="Email" Type="email" Binding="@contact.EmailAddress" HelperText="We'll never share your email with anyone else.">
+            <ValidationMessage For="@(()=>contact.EmailAddress)" />
+        </FormInput>
+        <FormInput Id="Subject" Label="Subject" Type="text" Binding="@contact.Subject">
+            <ValidationMessage For="@(()=>contact.Subject)" />
+        </FormInput>
+        <FormInput Id="Message" Label="Message" Type="textarea" Binding="@contact.Message">
+            <ValidationMessage For="@(()=>contact.Message)" />
+        </FormInput>
+        <button class="btn btn-primary my-4" type="submit">Submit</button>
+    </EditForm>
+</section>
 
-
-<EditForm Model="@contact">
-    <FormInput Id="FullName" Label="Full Name" Type="text" Binding="@contact.FullName"></FormInput>
-    <FormInput Id="EmailAddress" Label="Email" Type="email" Binding="@contact.EmailAddress"></FormInput>
-    <FormInput Id="Subject" Label="Subject" Type="text" Binding="@contact.Subject"></FormInput>
-    <FormInput Id="Message" Label="Message" Type="textarea" Binding="@contact.Message"></FormInput>
-    <button type="submit">Submit</button>
-</EditForm>
-
-@code{
+@code {
     BlazorWebsite.Components.Models.Contact contact = new();
+    private string contactCopy = "Got something to say? Give us a virtual high five!";
+
+    private string contactBlurb = "Whether you have a question, a suggestion, or just want to share your best high five moment, we’d love to hear from you! Drop us a message below, and we’ll get back to you faster than a perfectly timed high five. Don’t leave us hanging!";
+    
+    [Inject]
+    public IJSRuntime JSRuntime { get; set; }
+    async void SendEmail(){
+        await JSRuntime.InvokeVoidAsync("console.log", $"Send email");
+        @* Console.WriteLine("Send email"); *@
+    }
+    void InvalidSubmissionResponse(){
+        Console.WriteLine("There was an issue with that submission");
+    }
 }

@@ -1,13 +1,25 @@
 <footer>
-    <div class="contact-us">
-        <p>@footerCopy</p>
+    <section class="contact-us">
+        <h3>@footerHeadingCopy</h3>
+        <p>
+            @footerOpeningCopy
+        </p>
+
         <NavLink href="/contact">
-            <span class="bi bi-envelope-fill-nav-menu" aria-hidden="true"> @footerContactLabel</span>
+            <span class="footer-details email-icon" aria-hidden="true"> @footerEmailAddress</span>
         </NavLink>
-    </div>
+        <span class="footer-details location-icon">
+            @footerLocationAddress
+        </span>
+        <p>@footerClosingCopy</p>
+    </section>
 </footer>
 
 @code {
-    private string footerCopy = "If you have any questions, contact us by clicking below";
-    private string footerContactLabel = "Contact Us";
+    private string footerHeadingCopy = "Stay Connected - Keep the High Fives Coming!";
+    private string footerOpeningCopy = "Got questions, feedback, or just want to send us a virtual high five? We’d love to hear from you!";
+    private string footerClosingCopy = "Drop us a message, and we’ll high five you back as soon as possible!";
+    private string footerEmailAddress = $"Email: contact@highfivehq.com";
+    private string footerLocationAddress = $"Location: Wherever high fives happen!";
+
 }

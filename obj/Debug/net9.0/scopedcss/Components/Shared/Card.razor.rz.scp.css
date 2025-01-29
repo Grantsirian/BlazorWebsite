@@ -1,0 +1,32 @@
+.card-wrapper[b-i97wm4z6p4] {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 0 3px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+.card-wrapper img[b-i97wm4z6p4] {
+    height: auto;
+    max-height: 100%;
+    width: auto;
+}
+
+.card-wrapper figcaption[b-i97wm4z6p4] {
+    position: absolute;
+    inset: auto 0 0;
+    color: #fff;
+    padding: 2rem;
+    background-image: linear-gradient(0deg, rgba(9, 9, 121, 0.6), rgba(9, 9, 121, 0.5), transparent);
+    background-image: linear-gradient(0deg, var(--brand-colour-dark-50), var(--brand-colour-primary-50), var(--brand-colour-secondary-50), var(--brand-colour-light-50), transparent)
+}
+
+.card-wrapper h3[b-i97wm4z6p4] {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-wrapper p[b-i97wm4z6p4] {
+    margin: 0;
+}

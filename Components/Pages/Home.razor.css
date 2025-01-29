@@ -1,0 +1,14 @@
+﻿.home-copy-wrapper {
+    max-width: 74ch;
+    display: inline-flex;
+    width: auto;
+}
+
+.cards-wrapper {
+    display: flex;
+    margin: 4rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

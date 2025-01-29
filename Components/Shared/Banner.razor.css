@@ -1,17 +1,37 @@
 
 .banner-wrapper {
-    height: 12rem;
+    min-height: 12rem;
     position: relative;
+    isolation: isolate;
 }
 
 .banner-background {
-    background: rgb(70,130,180);
-    background: linear-gradient(45deg, rgba(70,130,180,1) 0%, rgba(9,9,121,1) 33%, rgba(9,9,121,1) 66%, rgba(85,170,221,1) 100%);
+    background: #4682b4;
+    background-image: linear-gradient(45deg, rgba(70, 130, 180, 1) 0%, rgba(9, 9, 121, 1) 33%, rgba(9, 9, 121, 1) 66%, rgba(85, 170, 221, 1) 100%);
+    background-image: var(--brand-gradient-45);
+    background-repeat: repeat;
     padding: 2rem 0;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.banner-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/logo.svg');
+    filter: invert(1);
+    opacity: 0.1;
+    background-size: 64rem;
+    background-position: center;
+    z-index: 0;
 }
 
 .banner-background ::deep > :is(h1,p, .dynamic-content) {
     color: #fff;
     padding: 1rem 4rem 1rem;
     margin: 0;
+    z-index: 1;
+    position: relative;
 }

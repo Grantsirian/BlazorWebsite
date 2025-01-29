@@ -1,16 +1,68 @@
 {
   "Files": [
     {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\Components\\Shared\\FormInput.razor.js",
+      "PackagePath": "staticwebassets\\Components\\Shared\\FormInput.razor.js"
+    },
+    {
       "Id": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\BlazorWebsite.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BlazorWebsite.r89bdg4eh0.bundle.scp.css"
+      "PackagePath": "staticwebassets\\BlazorWebsite.zfhnr60mzd.bundle.scp.css"
     },
     {
       "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon.png"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\favicon-96x96.png",
+      "PackagePath": "staticwebassets\\favicon-96x96.png"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
       "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\favicon.svg",
+      "PackagePath": "staticwebassets\\favicon.svg"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\CelebratoryOfficeHigh-five.jpg",
+      "PackagePath": "staticwebassets\\images\\CelebratoryOfficeHigh-five.jpg"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\High-Five_Large.jpg",
+      "PackagePath": "staticwebassets\\images\\High-Five_Large.jpg"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\High-Five_Large.webp",
+      "PackagePath": "staticwebassets\\images\\High-Five_Large.webp"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\Highfive-completion.jpg",
+      "PackagePath": "staticwebassets\\images\\Highfive-completion.jpg"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\SpaceHighFive.jpg",
+      "PackagePath": "staticwebassets\\images\\SpaceHighFive.jpg"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\higherfive.jpg",
+      "PackagePath": "staticwebassets\\images\\higherfive.jpg"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\highfive.jpg",
+      "PackagePath": "staticwebassets\\images\\highfive.jpg"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
     },
     {
       "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -187,6 +239,18 @@
     {
       "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\site.webmanifest",
+      "PackagePath": "staticwebassets\\site.webmanifest"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\web-app-manifest-192x192.png",
+      "PackagePath": "staticwebassets\\web-app-manifest-192x192.png"
+    },
+    {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\web-app-manifest-512x512.png",
+      "PackagePath": "staticwebassets\\web-app-manifest-512x512.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BlazorWebsite.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

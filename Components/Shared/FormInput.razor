@@ -1,4 +1,6 @@
-<div class="input-wrapper form-group">
+@implements IAsyncDisposable
+
+<div class="input-wrapper form-group" @ref="@input">
     <label for="@Id">@Label</label>
     @if (Type == "textarea")
     {
@@ -11,9 +13,12 @@
         </InputText>
     }
     @ChildContent
-    @if (HelperText != null)
+    
+    @if (HelperText != null || (ValidationText != null || ValidationText != ""))
     {
-        <small class="form-text text-muted">@HelperText</small>
+        <small class="form-text text-muted">
+            @(ValidationText ?? HelperText)
+        </small>
     }
 </div>
 
@@ -25,39 +30,37 @@
     [Parameter] public string Binding { get; set; }
     [Parameter] public EventCallback<string> BindingChanged { get; set; }
     [Parameter] public RenderFragment? ChildContent { get; set; }
-    @* private DotNetObjectReference<FormInput>? self; *@
+    public string ValidationText { get; set; }
     private IJSObjectReference? module;
 
     [Inject]
     public IJSRuntime JSRuntime { get; set; }
+    private ElementReference input;
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
             await JSRuntime.InvokeVoidAsync("console.log", $"connected JS in code");
-            //self = DotNetObjectReference.Create(this);
             module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./Components/Shared/FormInput.razor.js");
         }
     }
 
     public async Task validateInput(ChangeEventArgs e)
     {
+        if(Type != "email"){
+            return;
+        }
         string value = e.Value?.ToString() ?? "";
+        string response = "";
         await JSRuntime.InvokeVoidAsync("console.log", $"Blazor validateInput() triggered with value: {value}");
-        //Console.WriteLine($"Blazor validateInput() triggered with value: {value}");
 
-        // Update the Binding manually
-        //Binding = value;
-
-        // Notify the parent component of the change
-        //await BindingChanged.InvokeAsync(value);
-
-        // Call the JS function
         if (module != null)
         {
-            await module.InvokeVoidAsync("validateEmailInput", value);
+            response = await module.InvokeAsync<string>("validateEmailInput", value);
             await JSRuntime.InvokeVoidAsync("console.log", $"called JS with: {value}");
         }
+        await this.BindingChanged.InvokeAsync(response);
+        ValidationText = response;
     }
 
     public async void ConsoleLog(string message)
@@ -65,8 +68,9 @@
         await JSRuntime.InvokeVoidAsync("console.log", message);
     }
 
-    @* public void Dispose()
-    {
-        self?.Dispose();
-    } *@
+    async ValueTask IAsyncDisposable.DisposeAsync(){
+        if(module is not null){
+            await module.DisposeAsync();
+        }
+    }
 }

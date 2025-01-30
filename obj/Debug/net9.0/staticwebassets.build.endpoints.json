@@ -301,8 +301,8 @@
       ]
     },
     {
-      "Route": "Components/Shared/FormInput.razor.js",
-      "AssetFile": "Components/Shared/FormInput.razor.js",
+      "Route": "Components/Pages/Contact.razor.js",
+      "AssetFile": "Components/Pages/Contact.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -315,7 +315,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "527"
+          "Value": "1192"
         },
         {
           "Name": "Content-Type",
@@ -323,17 +323,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs=\""
+          "Value": "\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 18:24:36 GMT"
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs="
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
         },
         {
           "Name": "script-type",
@@ -342,13 +342,13 @@
       ]
     },
     {
-      "Route": "Components/Shared/FormInput.razor.js",
-      "AssetFile": "Components/Shared/FormInput.razor.js.gz",
+      "Route": "Components/Pages/Contact.razor.js",
+      "AssetFile": "Components/Pages/Contact.razor.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0,004016064257"
+          "Quality": "0,002298850575"
         }
       ],
       "ResponseHeaders": [
@@ -366,7 +366,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "248"
+          "Value": "434"
         },
         {
           "Name": "Content-Type",
@@ -374,15 +374,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8pl5YLlQBtQYs9nP3nW/amwdjxYyRCfW/MazZj+SA3g=\""
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs=\""
+          "Value": "W/\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 18:24:36 GMT"
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
         },
         {
           "Name": "Vary",
@@ -392,7 +392,152 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs="
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "Components/Pages/Contact.razor.js.gz",
+      "AssetFile": "Components/Pages/Contact.razor.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA="
+        }
+      ]
+    },
+    {
+      "Route": "Components/Shared/FormInput.razor.js",
+      "AssetFile": "Components/Shared/FormInput.razor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "Components/Shared/FormInput.razor.js",
+      "AssetFile": "Components/Shared/FormInput.razor.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,002298850575"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
         },
         {
           "Name": "script-type",
@@ -419,7 +564,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "248"
+          "Value": "434"
         },
         {
           "Name": "Content-Type",
@@ -427,11 +572,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8pl5YLlQBtQYs9nP3nW/amwdjxYyRCfW/MazZj+SA3g=\""
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 18:24:36 GMT"
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
         },
         {
           "Name": "Vary",
@@ -441,7 +586,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8pl5YLlQBtQYs9nP3nW/amwdjxYyRCfW/MazZj+SA3g="
+          "Value": "sha256-gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA="
         }
       ]
     },

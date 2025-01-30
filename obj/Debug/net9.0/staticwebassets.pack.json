@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "E:\\CodeRepos\\BlazorWebsite\\Components\\Pages\\Contact.razor.js",
+      "PackagePath": "staticwebassets\\Components\\Pages\\Contact.razor.js"
+    },
+    {
       "Id": "E:\\CodeRepos\\BlazorWebsite\\Components\\Shared\\FormInput.razor.js",
       "PackagePath": "staticwebassets\\Components\\Shared\\FormInput.razor.js"
     },

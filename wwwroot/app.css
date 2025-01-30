@@ -1,34 +1,35 @@
-:root{
-    
-/* Brand */
---brand-colour-dark: #182635ff;
---brand-colour-primary: #2b425dff;
---brand-colour-secondary: #365478ff;
---brand-colour-light: #3d5f85ff;
---brand-colour-accent: #cbbf7fff;
---brand-colour-white: #dae7fcff;
+:root {
 
-/*Tones*/
---brand-colour-dark-50: #182635f0;
---brand-colour-primary-50: #2b425df0;
---brand-colour-secondary-50: #365478f0;
---brand-colour-light-50: #3d5f85f0;
---brand-colour-accent-50: #cbbf7ff0;
---brand-colour-white-50: #dae7fcf0;
+    /* Brand */
+    --brand-colour-dark: #182635ff;
+    --brand-colour-primary: #2b425dff;
+    --brand-colour-secondary: #365478ff;
+    --brand-colour-light: #3d5f85ff;
+    --brand-colour-accent: #cbbf7fff;
+    --brand-colour-white: #dae7fcff;
 
-/* Gradients */
---brand-gradient-0: linear-gradient(0deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-90: linear-gradient(90deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-180: linear-gradient(180deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-270: linear-gradient(270deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-45: linear-gradient(45deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-135: linear-gradient(135deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-225: linear-gradient(225deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-315: linear-gradient(315deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
---brand-gradient-radial-1: radial-gradient(var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    /*Tones*/
+    --brand-colour-dark-50: #182635f0;
+    --brand-colour-primary-50: #2b425df0;
+    --brand-colour-secondary-50: #365478f0;
+    --brand-colour-light-50: #3d5f85f0;
+    --brand-colour-accent-50: #cbbf7ff0;
+    --brand-colour-white-50: #dae7fcf0;
+
+    /* Gradients */
+    --brand-gradient-0: linear-gradient(0deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-90: linear-gradient(90deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-180: linear-gradient(180deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-270: linear-gradient(270deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-45: linear-gradient(45deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-135: linear-gradient(135deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-225: linear-gradient(225deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-315: linear-gradient(315deg, var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
+    --brand-gradient-radial-1: radial-gradient(var(--brand-colour-dark), var(--brand-colour-primary), var(--brand-colour-secondary), var(--brand-colour-light), var(--brand-colour-accent));
 }
 
-html, body {
+html,
+body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 100%;
     display: flex;
@@ -36,7 +37,8 @@ html, body {
     background-color: var(--brand-colour-white);
 }
 
-a, .btn-link {
+a,
+.btn-link {
     color: var(--brand-colour-light);
 }
 
@@ -46,15 +48,23 @@ a, .btn-link {
     border-color: var(--brand-colour-accent);
 }
 
-.btn-primary:hover{
-    background-color: var(--brand-colour-light );
+.btn-primary:hover {
+    background-color: var(--brand-colour-light);
     border-color: var(--brand-colour-light);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem var(--brand-colour-white), 0 0 0 0.25rem var(--brand-colour-light);
-  background-color: var(--brand-colour-light );
-  border-color: var(--brand-colour-primary);
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus {
+    box-shadow: 0 0 0 0.1rem var(--brand-colour-white), 0 0 0 0.25rem var(--brand-colour-light);
+    background-color: var(--brand-colour-light);
+    border-color: var(--brand-colour-primary);
+}
+
+.form-control:focus,
+.form-check-input:focus {
+    border-color: var(--brand-colour-primary);  
+    box-shadow: 0 0 0 0.1rem var(--brand-colour-white), 0 0 0 0.25rem var(--brand-colour-light);
 }
 
 .content {
@@ -65,21 +75,21 @@ h1:focus {
     outline: none;
 }
 
-.large-copy{
+.large-copy {
     display: inline-flex;
     max-width: 72ch;
 }
 
 .valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
+    outline: 1px solid #29d85e;
 }
 
 .invalid {
-    outline: 1px solid #e50000;
+    outline: 1px solid #ca5b5b;
 }
 
 .validation-message {
-    color: #e50000;
+    color: #ca5b5b;
 }
 
 .blazor-error-boundary {
@@ -88,19 +98,21 @@ h1:focus {
     color: white;
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+}
 
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+.form-floating>.form-control-plaintext::placeholder,
+.form-floating>.form-control::placeholder {
     color: var(--bs-secondary-color);
     text-align: end;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+.form-floating>.form-control-plaintext:focus::placeholder,
+.form-floating>.form-control:focus::placeholder {
     text-align: start;
 }

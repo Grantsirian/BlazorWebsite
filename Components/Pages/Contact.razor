@@ -1,6 +1,6 @@
 @page "/contact"
 @rendermode InteractiveServer
-
+@implements IAsyncDisposable
 
 <PageTitle>Contact</PageTitle>
 
@@ -9,38 +9,111 @@
     <h4>@contactCopy</h4>
     <p class="large-copy">@contactBlurb</p>
     
-    <EditForm Model="@contact" OnValidSubmit="SendEmail" OnInvalidSubmit="InvalidSubmissionResponse" FormName="ContactForm">
+    <EditForm Model="@contact" OnValidSubmit="@handleValidSubmit" FormName="ContactForm">
         <DataAnnotationsValidator />
         
-        <FormInput Id="FullName" Label="Full Name" Type="text" Binding="@contact.FullName">
+        <div class="input-wrapper form-group" >
+            <label for="@contact.FullName">Full Name</label>
+            <InputText id="@contact.FullName" name="@contact.FullName" @bind-Value="@contact.FullName"  class="form-control"/>
             <ValidationMessage For="@(()=>contact.FullName)" />
-        </FormInput>
-        <FormInput Id="EmailAddress" Label="Email" Type="email" Binding="@contact.EmailAddress" HelperText="We'll never share your email with anyone else.">
+        </div>
+
+        <div class="input-wrapper form-group" >
+            <label for="@contact.EmailAddress">Email</label>
+            <InputText  id="@contact.EmailAddress" name="@contact.EmailAddress"  @oninput="validateInput" @bind-Value="@contact.EmailAddress"  class="@(isInvalid == true ? "invalid form-control" : "form-control")"/>
             <ValidationMessage For="@(()=>contact.EmailAddress)" />
-        </FormInput>
-        <FormInput Id="Subject" Label="Subject" Type="text" Binding="@contact.Subject">
+            @ValidationText
+        </div>
+
+        <div class="input-wrapper form-group" >
+            <label for="@contact.Subject">Subject</label>
+            <InputText  id="@contact.Subject" name="@contact.Subject" @bind-Value="@contact.Subject"  class="form-control"/>
             <ValidationMessage For="@(()=>contact.Subject)" />
-        </FormInput>
-        <FormInput Id="Message" Label="Message" Type="textarea" Binding="@contact.Message">
+        </div>
+
+        <div class="input-wrapper form-group" >
+            <label for="@contact.Message">Message</label>
+            <InputTextArea  id="@contact.Message" name="@contact.Message" @bind-Value="@contact.Message"  class="form-control"/>
             <ValidationMessage For="@(()=>contact.Message)" />
-        </FormInput>
-        <button class="btn btn-primary my-4" type="submit">Submit</button>
+        </div>
+
+        <button class="btn btn-primary my-4" type="submit" disabled="@isInvalid">Submit</button>
+        @if(isSubmitted && !isInvalid){
+            <p>@submitFormSuccessMessage</p>
+        }
     </EditForm>
 </section>
 
 @code {
     BlazorWebsite.Components.Models.Contact contact = new();
-    private string contactCopy = "Got something to say? Give us a virtual high five!";
-
-    private string contactBlurb = "Whether you have a question, a suggestion, or just want to share your best high five moment, we’d love to hear from you! Drop us a message below, and we’ll get back to you faster than a perfectly timed high five. Don’t leave us hanging!";
     
     [Inject]
     public IJSRuntime JSRuntime { get; set; }
-    async void SendEmail(){
-        await JSRuntime.InvokeVoidAsync("console.log", $"Send email");
-        @* Console.WriteLine("Send email"); *@
+    
+    public string ValidationText { get; set; }
+
+    public EventCallback<string> BindingChanged { get; set; }
+
+    private IJSObjectReference? module;
+
+    private string contactCopy = "Got something to say? Give us a virtual high five!";
+
+    private string submitFormSuccessMessage = "Your message has been submitted!";
+
+    private bool isSubmitted = false;
+
+    private string contactBlurb = "Whether you have a question, a suggestion, or just want to share your best high five moment, we’d love to hear from you! Drop us a message below, and we’ll get back to you faster than a perfectly timed high five. Don’t leave us hanging!";
+    
+    private bool isInvalid = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("console.log", $"connected JS in code");
+            module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./Components/Pages/Contact.razor.js");
+        }
     }
-    async void InvalidSubmissionResponse(){
-        await JSRuntime.InvokeVoidAsync("console.log", $"Send email failed");
+
+    public async Task validateInput(ChangeEventArgs e)
+    {
+        
+        string value = e.Value?.ToString() ?? "";
+        string response = "";
+        await JSRuntime.InvokeVoidAsync("console.log", $"Blazor validateInput() triggered with value: {value}");
+
+        if (module != null)
+        {
+            response = await module.InvokeAsync<string>("validateEmailInput", value);
+            await JSRuntime.InvokeVoidAsync("console.log", $"called JS with: {value}");
+        }
+        //await this.BindingChanged.InvokeAsync(response);
+        ValidationText = response;
+        if(response != ""){
+            isInvalid = true;
+        }else{
+            isInvalid = false;
+        }
+        
+    }
+
+    public async void ConsoleLog(string message)
+    {
+        await JSRuntime.InvokeVoidAsync("console.log", message);
+    }
+
+    async void handleValidSubmit(){
+        await JSRuntime.InvokeVoidAsync("console.log", $"Send email");
+        isSubmitted = true;
+    }
+
+    private void checkIsValid(string message){
+        ValidationText = message;
+    }
+
+    async ValueTask IAsyncDisposable.DisposeAsync(){
+        if(module is not null){
+            await module.DisposeAsync();
+        }
     }
 }

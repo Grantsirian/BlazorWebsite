@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g1goxu4nl+Tq8B5O9G6MsTv5352N6iG3iD/DVprOOGk=",
+  "Hash": "WO9u1YYcqRzQnI9TUMNbt9iAvQsHF4R8OzzMUgL8myI=",
   "Source": "BlazorWebsite",
   "BasePath": "_content/BlazorWebsite",
   "Mode": "Default",
@@ -17,6 +17,27 @@
   ],
   "Assets": [
     {
+      "Identity": "E:\\CodeRepos\\BlazorWebsite\\Components\\Pages\\Contact.razor.js",
+      "SourceId": "BlazorWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\CodeRepos\\BlazorWebsite\\",
+      "BasePath": "_content/BlazorWebsite",
+      "RelativePath": "Components/Pages/Contact.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d1pxc3s65l",
+      "Integrity": "/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "Components\\Pages\\Contact.razor.js"
+    },
+    {
       "Identity": "E:\\CodeRepos\\BlazorWebsite\\Components\\Shared\\FormInput.razor.js",
       "SourceId": "BlazorWebsite",
       "SourceType": "Discovered",
@@ -31,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0repq90aay",
-      "Integrity": "FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs=",
+      "Fingerprint": "d1pxc3s65l",
+      "Integrity": "/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "Components\\Shared\\FormInput.razor.js"
@@ -288,6 +309,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Identity": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\a01vtqr2o4-d1pxc3s65l.gz",
+      "SourceId": "BlazorWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/BlazorWebsite",
+      "RelativePath": "Components/Pages/Contact.razor.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\CodeRepos\\BlazorWebsite\\Components\\Pages\\Contact.razor.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "dhdl9pliok",
+      "Integrity": "gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\CodeRepos\\BlazorWebsite\\Components\\Pages\\Contact.razor.js"
     },
     {
       "Identity": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\c4bgekhzj2-s35ty4nyc5.gz",
@@ -1046,7 +1088,7 @@
       "OriginalItemSpec": "E:\\CodeRepos\\BlazorWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\xmsh3ftf9v-0repq90aay.gz",
+      "Identity": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\xmsh3ftf9v-d1pxc3s65l.gz",
       "SourceId": "BlazorWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\",
@@ -1060,8 +1102,8 @@
       "RelatedAsset": "E:\\CodeRepos\\BlazorWebsite\\Components\\Shared\\FormInput.razor.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "67vkjbkav1",
-      "Integrity": "8pl5YLlQBtQYs9nP3nW/amwdjxYyRCfW/MazZj+SA3g=",
+      "Fingerprint": "dhdl9pliok",
+      "Integrity": "gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\CodeRepos\\BlazorWebsite\\Components\\Shared\\FormInput.razor.js"
@@ -3431,6 +3473,151 @@
       ]
     },
     {
+      "Route": "Components/Pages/Contact.razor.js",
+      "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\Components\\Pages\\Contact.razor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "Components/Pages/Contact.razor.js",
+      "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\a01vtqr2o4-d1pxc3s65l.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,002298850575"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "434"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "Components/Pages/Contact.razor.js.gz",
+      "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\a01vtqr2o4-d1pxc3s65l.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA="
+        }
+      ]
+    },
+    {
       "Route": "Components/Shared/FormInput.razor.js",
       "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\Components\\Shared\\FormInput.razor.js",
       "Selectors": [],
@@ -3445,7 +3632,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "527"
+          "Value": "1192"
         },
         {
           "Name": "Content-Type",
@@ -3453,17 +3640,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs=\""
+          "Value": "\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 18:24:36 GMT"
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs="
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
         },
         {
           "Name": "script-type",
@@ -3473,12 +3660,12 @@
     },
     {
       "Route": "Components/Shared/FormInput.razor.js",
-      "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\xmsh3ftf9v-0repq90aay.gz",
+      "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\xmsh3ftf9v-d1pxc3s65l.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0,004016064257"
+          "Quality": "0,002298850575"
         }
       ],
       "ResponseHeaders": [
@@ -3488,15 +3675,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "248"
+          "Value": "434"
         },
         {
           "Name": "ETag",
-          "Value": "\"8pl5YLlQBtQYs9nP3nW/amwdjxYyRCfW/MazZj+SA3g=\""
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 18:24:36 GMT"
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3516,13 +3703,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs=\""
+          "Value": "W/\"/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FEtDyox4N4b9Ftv7vx4xBewj7cy40AbWUCtYCNtVgvs="
+          "Value": "sha256-/0qAHnI8zZK2/VubsDijYyeRkMqnXGJoucpSdFUC8TE="
         },
         {
           "Name": "script-type",
@@ -3532,7 +3719,7 @@
     },
     {
       "Route": "Components/Shared/FormInput.razor.js.gz",
-      "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\xmsh3ftf9v-0repq90aay.gz",
+      "AssetFile": "E:\\CodeRepos\\BlazorWebsite\\obj\\Debug\\net9.0\\compressed\\xmsh3ftf9v-d1pxc3s65l.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3541,7 +3728,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "248"
+          "Value": "434"
         },
         {
           "Name": "Content-Type",
@@ -3549,11 +3736,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8pl5YLlQBtQYs9nP3nW/amwdjxYyRCfW/MazZj+SA3g=\""
+          "Value": "\"gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 18:24:36 GMT"
+          "Value": "Thu, 30 Jan 2025 15:20:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3571,7 +3758,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8pl5YLlQBtQYs9nP3nW/amwdjxYyRCfW/MazZj+SA3g="
+          "Value": "sha256-gbQkA4Yx4YUA6WDjMNrNQ36E4EjlgLlU7VzE1Ht1RmA="
         }
       ]
     },

@@ -40,7 +40,7 @@
         await JSRuntime.InvokeVoidAsync("console.log", $"Send email");
         @* Console.WriteLine("Send email"); *@
     }
-    void InvalidSubmissionResponse(){
-        Console.WriteLine("There was an issue with that submission");
+    async void InvalidSubmissionResponse(){
+        await JSRuntime.InvokeVoidAsync("console.log", $"Send email failed");
     }
 }

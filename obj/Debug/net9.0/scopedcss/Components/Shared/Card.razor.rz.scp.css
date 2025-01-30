@@ -8,9 +8,8 @@
 }
 
 .card-wrapper img[b-i97wm4z6p4] {
-    height: auto;
-    max-height: 100%;
-    width: auto;
+    max-width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .card-wrapper figcaption[b-i97wm4z6p4] {

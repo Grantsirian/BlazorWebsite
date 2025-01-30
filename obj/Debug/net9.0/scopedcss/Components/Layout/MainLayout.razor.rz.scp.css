@@ -53,61 +53,6 @@ article[b-jyyhsgp3pu] {
     text-overflow: ellipsis;
 }
 
-@media (max-width: 40.0613rem) {
-    .top-row[b-jyyhsgp3pu] {
-        justify-content: space-between;
-    }
-
-    .top-row[b-jyyhsgp3pu]  a,
-    .top-row[b-jyyhsgp3pu]  .btn-link {
-        margin-left: 0;
-    }
-}
-
-@media (min-width: 40.0625rem) {
-    .page[b-jyyhsgp3pu] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-jyyhsgp3pu] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-jyyhsgp3pu] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth[b-jyyhsgp3pu]  a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row[b-jyyhsgp3pu] {
-        padding-left: 2rem;
-        padding-right: 1.5rem;
-    }
-}
-
-@media (min-width: 48rem) {
-    .page[b-jyyhsgp3pu] {
-        flex-direction: column;
-    }
-
-    .sidebar[b-jyyhsgp3pu] {
-        display: flex;
-        width: 100%;
-        height: 4rem;
-        position: sticky;
-        top: 0;
-    }
-}
-
 #blazor-error-ui[b-jyyhsgp3pu] {
     color-scheme: light only;
     background: lightyellow;
@@ -127,4 +72,44 @@ article[b-jyyhsgp3pu] {
     position: absolute;
     right: 0.75rem;
     top: 0.5rem;
+}
+
+@media (max-width: 40.0613rem) {
+    .top-row[b-jyyhsgp3pu] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-jyyhsgp3pu]  a,
+    .top-row[b-jyyhsgp3pu]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 48rem) {
+
+    .page[b-jyyhsgp3pu] {
+        flex-direction: column;
+    }
+
+    .sidebar[b-jyyhsgp3pu] {
+        position: sticky;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 4rem;
+    }
+
+    .top-row[b-jyyhsgp3pu] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+    }
+
+    .top-row.auth[b-jyyhsgp3pu]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
 }

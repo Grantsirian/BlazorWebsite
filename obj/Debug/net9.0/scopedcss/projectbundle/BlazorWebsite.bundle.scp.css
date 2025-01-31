@@ -262,6 +262,11 @@ article[b-jyyhsgp3pu] {
     max-width: 100%;
     height: auto;
 }
+/* _content/BlazorWebsite/Components/Pages/Contact.razor.rz.scp.css */
+.input-wrapper[b-jcarw02n3c] {
+    max-width: 24rem;
+    margin: 1.5rem 0;
+}
 /* _content/BlazorWebsite/Components/Pages/Home.razor.rz.scp.css */
 .home-copy-wrapper[b-xilignggeq] {
     max-width: 74ch;

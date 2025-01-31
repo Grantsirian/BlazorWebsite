@@ -1,5 +1,12 @@
 ﻿.about-image{
     display: block;
-    max-width: 100%;
+    max-width: calc(100% - 2rem);
     height: auto;
+    border-radius: 1rem;
+}
+
+@media all and (min-width: 48rem) {
+    .about-image.about-image {
+        max-width: calc(100% - 8rem);
+    }
 }

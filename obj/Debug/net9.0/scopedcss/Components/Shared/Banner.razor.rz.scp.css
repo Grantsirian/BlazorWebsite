@@ -10,7 +10,7 @@
     background-image: linear-gradient(45deg, rgba(70, 130, 180, 1) 0%, rgba(9, 9, 121, 1) 33%, rgba(9, 9, 121, 1) 66%, rgba(85, 170, 221, 1) 100%);
     background-image: var(--brand-gradient-45);
     background-repeat: repeat;
-    padding: 2rem 0;
+    padding: 1rem 0 3rem;
     height: 100%;
     position: relative;
     z-index: -1;

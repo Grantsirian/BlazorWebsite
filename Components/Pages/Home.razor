@@ -3,23 +3,26 @@
 
 <PageTitle>Home</PageTitle>
 
-<Banner Title="Welcome to the Home of High Fives!" Blurb="Spreading good vibes, one high five at a time! If you’re feeling the energy, show us some love — give us a high five below and watch the counter climb!">
-    
-    <button class="btn btn-primary" @onclick="IncrementCount">High five!</button>
+<Banner Title="Welcome to the Home of High Fives!" Blurb="Spreading good vibes, one high five at a time! If you’re feeling the energy, show us some love — give us a high five below and watch the counter climb!"> 
+    <button class="btn btn-primary btn-lg" @onclick="IncrementCount">High five!</button>
     @if (highFiveCount > 0)
     {
         <p role="status" class="ps-2 m-0 d-inline-block">Wow! you've given me @highFiveCount high five@(highFiveCount > 1 ? "s" : "")!</p>
     }
 </Banner>
-<p class="mx-auto my-4 p-2 p-md-4 text-center fs-4 home-copy-wrapper large-copy">
-    @homePageCopy
-</p>
-<section class="cards-wrapper m-2 m-md-4">
-    @foreach (var card in CardList)
-    {
-        <Card Title="@card.Title" Description="@card.Description" ImageUrl="@card.ImageUrl" ImageAltText="@card.ImageAltText"></Card>
-    }
-</section>
+@if(homePageCopy is not null){
+    <p class="mx-auto my-4 p-2 p-md-4 text-center fs-4 home-copy-wrapper large-copy">
+        @homePageCopy
+    </p>
+}
+@if(CardList is not null){
+    <section class="cards-wrapper m-2 pb-4 m-md-4">
+        @foreach (var card in CardList)
+        {
+            <Card Title="@card.Title" Description="@card.Description" ImageUrl="@card.ImageUrl" ImageAltText="@card.ImageAltText"></Card>
+        }
+    </section>
+}
 
 @code {
     private int highFiveCount = 0;

@@ -4,8 +4,8 @@
 
 <PageTitle>Contact</PageTitle>
 
-<section class="contact-form-wrapper m-2 m-md-4">
-    <h1>Contact</h1>
+<section class="element-spacer">
+    <h1 class="brand-heading-dark heading-spacing">Contact</h1>
     <h4>@contactCopy</h4>
     <p class="large-copy">@contactBlurb</p>
     
@@ -22,7 +22,11 @@
             <label for="@contact.EmailAddress">Email</label>
             <InputText  id="@contact.EmailAddress" name="@contact.EmailAddress"  @oninput="validateInput" @bind-Value="@contact.EmailAddress"  class="@(isInvalid == true ? "invalid form-control" : "form-control")"/>
             <ValidationMessage For="@(()=>contact.EmailAddress)" />
-            @ValidationText
+            @if(ValidationText != null && ValidationText != ""){
+                <div class="validation-message">
+                    @ValidationText
+                </div>
+            }
         </div>
 
         <div class="input-wrapper form-group" >
@@ -37,9 +41,9 @@
             <ValidationMessage For="@(()=>contact.Message)" />
         </div>
 
-        <button class="btn btn-primary my-4" type="submit" disabled="@isInvalid">Submit</button>
+        <button class="btn btn-primary btn-lg my-4" type="submit" disabled="@isInvalid">Submit</button>
         @if(isSubmitted && !isInvalid){
-            <p>@submitFormSuccessMessage</p>
+            <p class="success-message">@submitFormSuccessMessage <img class="brand-logo" src=".\images\logo.svg" alt="logo" /></p>
         }
     </EditForm>
 </section>

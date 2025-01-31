@@ -87,7 +87,6 @@ E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Pages\Home.razo
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Pages\About.razor.rz.scp.css
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\xmsh3ftf9v-d1pxc3s65l.gz
 E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\a01vtqr2o4-d1pxc3s65l.gz
-E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\wjvmvmwgwo-2v86pbpy8i.gz
-E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\scopedcss\Components\Pages\Contact.razor.rz.scp.css
-E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\l2w6wkdiwf-t5pfakyj3v.gz
-E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\j1r3oyt1x3-t5pfakyj3v.gz
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\wjvmvmwgwo-82iy84rahr.gz
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\l2w6wkdiwf-tl3x3w58bu.gz
+E:\CodeRepos\BlazorWebsite\obj\Debug\net9.0\compressed\j1r3oyt1x3-tl3x3w58bu.gz

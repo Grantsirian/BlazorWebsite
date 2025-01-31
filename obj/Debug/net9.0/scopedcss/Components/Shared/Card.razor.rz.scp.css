@@ -9,7 +9,16 @@
 
 .card-wrapper img[b-i97wm4z6p4] {
     max-width: 100%;
-  aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
+}
+
+.card-wrapper img[b-i97wm4z6p4] {
+    transform: scale(1);
+    transition: transform 1.5s ease-in-out;
+}
+
+.card-wrapper:hover img[b-i97wm4z6p4] {
+    transform: scale(1.2);
 }
 
 .card-wrapper figcaption[b-i97wm4z6p4] {

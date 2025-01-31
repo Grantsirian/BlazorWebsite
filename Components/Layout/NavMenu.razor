@@ -1,5 +1,5 @@
 ﻿<div class="ps-3 navbar navbar-dark logo-wrapper">
-    <a class="navbar-brand" href=""><img class="header-logo" src=".\images\logo.svg" /> High Five</a>
+    <a class="navbar-brand" href="/"><img class="header-logo" src=".\images\logo.svg" alt="logo" /> High Five</a>
 </div>
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
@@ -29,16 +29,15 @@
 @code {
     public class NavItem
     {
-        public string LinkName { get; set; }
-        public string LinkDestination { get; set; }
-        public string LinkIcon { get; set; }
+        public string LinkName { get; set; } = "";
+        public string LinkDestination { get; set; } = "";
+        public string LinkIcon { get; set; } = "";
     }
 
     List<NavItem> navItems = new List<NavItem>
     {
         new NavItem { LinkName = "Home", LinkDestination = "/", LinkIcon = "bi bi-house-door-fill-nav-menu" },
         new NavItem { LinkName = "About", LinkDestination = "about", LinkIcon = "bi bi-about-fill-nav-menu" },
-        new NavItem { LinkName = "Contact", LinkDestination = "contact", LinkIcon = "bi bi-envelope-fill-nav-menu" },
-        new NavItem { LinkName = "Weather", LinkDestination = "weather", LinkIcon = "bi bi-list-nested-nav-menu" }
+        new NavItem { LinkName = "Contact", LinkDestination = "contact", LinkIcon = "bi bi-envelope-fill-nav-menu" }
     };
 }

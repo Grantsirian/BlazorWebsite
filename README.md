@@ -71,29 +71,6 @@ Open this URL in your browser to see the application in action.
 
 ---
 
-## 🏗️ Deployment
-
-To publish the Blazor WebAssembly app for deployment:
-
-```sh
-dotnet publish -c Release -o publish
-```
-
-This generates the production-ready files in the `publish` folder.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! To contribute:
-
-1. **Fork** the repository.
-2. Create a **new branch** for your changes.
-3. Commit your changes and push them to your fork.
-4. Open a **pull request**.
-
----
-
 ## 🛠 Troubleshooting
 
 - **Issue:** `dotnet: command not found`

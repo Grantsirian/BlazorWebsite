@@ -8,7 +8,7 @@ Welcome to the **BlazorWebsite** project! This guide will help you set up, run, 
 
 Before running the project, ensure you have the following installed:
 
-- [**.NET 9 SDK**](https://dotnet.microsoft.com/download/dotnet/9.0)
+- [**.NET 9 SDK**](https://dotnet.microsoft.com/download/dotnet/9.0) (This step may require you to restart your PC)
 - A modern web browser (Edge, Chrome, Firefox, etc.)
 - (Optional) [Visual Studio 2022](https://visualstudio.microsoft.com/) with Blazor WebAssembly support **OR** VS Code with the C# extension
 
